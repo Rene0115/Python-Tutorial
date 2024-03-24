@@ -68,3 +68,56 @@ print(lists)  # ['First', 'here', 'there', 'everywhere', 'Art', 'list', 2, 4]
 
 lists.remove("here")
 print(lists)  # ['First', 'there', 'everywhere', 'Art', 'list', 2, 4]
+
+# remove last element if no parameter is passed
+lists.pop()  # return the "popped" string
+print(lists)  # ['First', 'there', 'everywhere', 'Art', 'list', 2]
+
+# loop list and print index with string
+for index, string in enumerate(lists):
+    print(index, string)
+
+# working with dictionaries
+
+dictionary1 = {"alive": 2, "active": "huh", "2live": 34}
+print(dictionary1["alive"])
+
+dictionary1["active"] = "16"
+print(dictionary1["active"])
+
+print(dictionary1.get("2live"))
+
+del dictionary1["active"]  # delete string value pair
+print(dictionary1)
+
+# loop through dictionary keys
+
+for key in dictionary1:
+    print(key)
+
+# loop through dictionary values
+
+for value in dictionary1.values():
+    print(value)
+
+# conditionals
+jest = True
+if jest == True:
+    print("True")
+
+if dictionary1["2live"] == 34:
+    print("16")
+else:
+    print("False")
+
+if jest == True and dictionary1["2live"] == 34:
+    print("True")
+else:
+    print("False")
+
+
+for num in new_list:
+   if 3 in new_list:
+       print("3 is in the list")
+       break
+
