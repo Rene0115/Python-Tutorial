@@ -115,9 +115,31 @@ if jest == True and dictionary1["2live"] == 34:
 else:
     print("False")
 
-
 for num in new_list:
-   if 3 in new_list:
-       print("3 is in the list")
-       break
+    num += 1
+print(new_list)
 
+
+# Working with functions
+
+
+# Jest represent a default value if a value is not provided for the parameter
+def hello_func(text, mew="Jest"):
+    # print(text)
+    return f"{text} is not the {mew}"
+
+
+print(hello_func("He"))  # He is not the Jest
+
+
+def thanngs(*args, **kwargs):
+    print(args)
+    print(kwargs)
+    return
+
+
+courses = ["Math", "Art"]
+info = {"name": "jack", "age": 45}
+
+#  unpacks the courses and info so they can be used in th function the asterisks represent the positions of the variables
+thanngs(*courses, **info)
