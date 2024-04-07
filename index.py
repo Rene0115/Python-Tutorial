@@ -1,3 +1,4 @@
+
 # Commenting and logging
 print(3)
 
@@ -138,8 +139,14 @@ def thanngs(*args, **kwargs):
     return
 
 
-courses = ["Math", "Art"]
+course = ["Math", "Art"]
 info = {"name": "jack", "age": 45}
 
 #  unpacks the courses and info so they can be used in th function the asterisks represent the positions of the variables
-thanngs(*courses, **info)
+thanngs(*course, **info)
+
+#Using imports 
+import corse as hicky 
+from funct import append_to_list as indent
+
+indent(hicky.courses, "lmao");
